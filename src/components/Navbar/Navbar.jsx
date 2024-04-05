@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {GiHamburgerMenu} from 'react-icons/gi';
 import { MdOutlineRestaurantMenu } from 'react-icons/md';
-
+import { Link } from 'react-router-dom';
 import images from '../../constants/images';
 
 import './Navbar.css';
@@ -25,13 +25,17 @@ const Navbar = () => {
 
    </ul>
    <div className='app__navbar-login'>
-    <a href='#login' className='p__opensans'>Log In / Register</a>
+   {/* <a href='#login' className='p__opensans'>Log In / Register</a> */}
+   <Link to={"/login "}className='p__opensans'>Log In / Register</Link>
+  
+
    <div />
-   <a href='/' className='p__opensans'>Book Table</a>
+   {/* <a href='/' className='p__opensans'>Book Table</a> */}
+   <Link to={"/book "}className='p__opensans'>Book Table</Link>
    </div>
    <div className="app__navbar-smallscreen">
 
-    <GiHamburgerMenu color="#fff" fontSize={47} onClick={()=>setToggleMenu(true)}></GiHamburgerMenu>
+     <GiHamburgerMenu color="#fff" fontSize={47} onClick={()=>setToggleMenu(true)}></GiHamburgerMenu>
 
      {toggleMenu && (
     <div className='app__navbar-smallscreen_overlay flex_center slide-bottom'>

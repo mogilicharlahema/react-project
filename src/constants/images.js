@@ -34,6 +34,10 @@ import letter from '../assets/letter.jpeg';
 import sh from '../assets/sh.png';
 import manchef from '../assets/manchef.avif';
 import food from '../assets/food.jpeg';
+import email from '../assets/email.png';
+import password from '../assets/password.png';
+import person from '../assets/person.png';
+// import cross from '../assets/cross.jpg';
 
 export default {
   bg,
@@ -70,6 +74,10 @@ export default {
   manchef,
   food,
   bar,
+  email,
+  password,
+  person,
+ 
  
 
 };
